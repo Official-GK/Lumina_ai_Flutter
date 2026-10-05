@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<meta content="mobile_tab" name="shell-type"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#d8e3fb",
+            "error": "#ba1a1a",
+            "primary-container": "#26a69a",
+            "background": "#f9f9ff",
+            "tertiary-fixed": "#8ef4e9",
+            "on-primary-container": "#003430",
+            "surface-container": "#e7eeff",
+            "on-secondary-fixed": "#260058",
+            "surface-bright": "#f9f9ff",
+            "outline": "#6d7a77",
+            "on-primary-fixed-variant": "#005049",
+            "inverse-primary": "#66d9cc",
+            "tertiary": "#006a63",
+            "on-tertiary-container": "#003430",
+            "on-tertiary-fixed": "#00201d",
+            "surface-tint": "#006a62",
+            "on-error-container": "#93000a",
+            "surface": "#f9f9ff",
+            "primary": "#006a62",
+            "on-secondary-fixed-variant": "#572e99",
+            "surface-container-high": "#dee8ff",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#66d9cc",
+            "secondary-fixed": "#ebdcff",
+            "on-surface": "#111c2d",
+            "on-secondary-container": "#491d8a",
+            "on-background": "#111c2d",
+            "on-tertiary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#71d7cd",
+            "on-primary-fixed": "#00201d",
+            "secondary-fixed-dim": "#d4bbff",
+            "on-tertiary-fixed-variant": "#00504a",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#3d4947",
+            "tertiary-container": "#39a59b",
+            "primary-fixed": "#84f5e8",
+            "secondary": "#6f48b2",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-container-low": "#f0f3ff",
+            "surface-variant": "#d8e3fb",
+            "outline-variant": "#bcc9c6",
+            "error-container": "#ffdad6",
+            "surface-dim": "#cfdaf2",
+            "secondary-container": "#b78efe",
+            "inverse-surface": "#263143"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "1rem",
+            "margin": "1.25rem",
+            "space-xl": "2rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          fontFamily: {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }],
+            "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-fixed">
+<!-- Header: matches h-16 with main pt-16 -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(100,116,139,0.08)]">
+<div class="h-16 px-margin flex items-center justify-between">
+<!-- Brand Mark & Logo -->
+<div class="flex items-center gap-space-sm">
+<img alt="Lumina Career AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WRbrADognoGRw_tOSOIBO2qkMkPSQrzPGoUedNUh8uwuK7o37bwJA0Hf49fKIq4dmcKUsBHtLvz7pVYntKULdkS9dckE19-AyAGZWsqO5LGy7k5tMD_NoGjsfkwLbBAIDVwRw72FJonndsl3rLUved6FNE8LD83DSLCaVJiTM47JB0AwayigZ0wQKzIUDqmjv0sjtkOi7LNIYITkEdYFGWfRQxo1usSaVr70PMroTrxCKfznbu1qpSHmk"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Lumina</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide leading-none mt-0.5">Career AI</span>
+</div>
+</div>
+<!-- Dynamic Page Title & User Profile Avatar -->
+<div class="flex items-center gap-space-sm">
+<div class="text-right hidden xs:block">
+<h1 class="font-label-md text-label-md text-on-surface-variant line-clamp-1 max-w-[120px]">User Profile &amp; Portfolio</h1>
+</div>
+<a aria-label="User Profile" class="relative flex items-center justify-center p-0.5 rounded-full hover:opacity-90 transition-opacity ring-2 ring-primary-container/30 active:scale-95 duration-150" data-path="profile" href="#">
+<img alt="Profile avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WcJnVZOkmT97a6UAXYca2JyRVUEZJos30OceQRcphqHujd2-ShnQ2FbfQjT5w1Zx6JXrQ-n1xB0Cbj_CT-7a36nBbvYaPNq0FwoKMFUbrt1GTyW0RvRPoqngsfR3k0_b-EAm07Jimf-UZ-HClAd566NvSIqoK9JwcjEMOBk9KL3eqObWGEDWsh2mc5QFvcoUuiPcLsq1NvE-ifrO7u5xoTrqBRK3xvzhojh22r8d_y6D6_DpFpiK7bMBA9"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container border-2 border-surface-container-lowest"></span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Slot -->
+<main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen">
+<div class="flex flex-col w-full relative">
+<!-- Ambient Luminous Background Gradients -->
+<div class="absolute -top-10 -left-12 w-64 h-64 rounded-full bg-primary-container/10 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -right-12 w-72 h-72 rounded-full bg-secondary-container/20 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-[680px] -left-10 w-64 h-64 rounded-full bg-tertiary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<!-- Main Content Wrapper with screen gutter -->
+<div class="px-margin space-y-space-md py-space-sm pb-8">
+<!-- Profile & Candidate Summary Glass Card (20px radius) -->
+<section class="relative overflow-hidden rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-xl p-space-md shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08),0_2px_6px_-1px_rgba(100,116,139,0.04)]">
+<!-- Glow node top corner -->
+<div class="absolute -top-12 -right-12 w-28 h-28 bg-primary-container/15 rounded-full blur-xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col gap-space-sm">
+<!-- Avatar and Identity Header -->
+<div class="flex items-start gap-space-sm">
+<div class="relative shrink-0">
+<img alt="Alex Morgan profile portrait" class="w-16 h-16 rounded-[16px] object-cover shadow-sm" src="https://lh3.googleusercontent.com/aida/AEtjO1WcJnVZOkmT97a6UAXYca2JyRVUEZJos30OceQRcphqHujd2-ShnQ2FbfQjT5w1Zx6JXrQ-n1xB0Cbj_CT-7a36nBbvYaPNq0FwoKMFUbrt1GTyW0RvRPoqngsfR3k0_b-EAm07Jimf-UZ-HClAd566NvSIqoK9JwcjEMOBk9KL3eqObWGEDWsh2mc5QFvcoUuiPcLsq1NvE-ifrO7u5xoTrqBRK3xvzhojh22r8d_y6D6_DpFpiK7bMBA9"/>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-primary-container shadow-sm">
+<span class="material-symbols-outlined text-surface-container-lowest text-[11px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between gap-1">
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate">Alex Morgan</h2>
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-primary-container/15 text-primary font-label-sm text-label-sm shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Recruiter Ready
+              </span>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant truncate">Senior AI Product Designer</p>
+<div class="mt-1 inline-flex items-center gap-1 px-2 py-0.5 rounded-[9999px] bg-secondary-fixed/50 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span>Lumina Certified Tier-1 Candidate</span>
+</div>
+</div>
+</div>
+<!-- Metric Badges Row -->
+<div class="grid grid-cols-3 gap-2 pt-2">
+<div class="flex flex-col items-center justify-center p-2 rounded-[14px] bg-surface-container-low/70 text-center">
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_graph</span>
+<span class="font-headline-sm text-headline-sm text-primary">68%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-tight">Readiness Score</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-[14px] bg-surface-container-low/70 text-center">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">folder_special</span>
+<span class="font-headline-sm text-headline-sm text-secondary">4</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-tight">Verified Works</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 rounded-[14px] bg-surface-container-low/70 text-center">
+<div class="flex items-center gap-1 text-primary-container">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-headline-sm text-headline-sm text-on-primary-container">12</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5 leading-tight">Badges Earned</span>
+</div>
+</div>
+<!-- Action CTAs -->
+<div class="flex items-center gap-2 pt-1">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-10 px-3 rounded-[14px] bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_4px_14px_rgba(0,106,98,0.22)] active:scale-95 transition-transform" onclick="triggerShareNotice()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share Portfolio Link</span>
+</button>
+<button class="h-10 px-3 rounded-[14px] bg-surface-container-high/80 text-on-surface font-label-md text-label-md flex items-center justify-center gap-1 active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+<span>Edit</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Tabbed Navigation Switcher (Segmented Glass Pill) -->
+<div class="p-1 rounded-[16px] bg-surface-container-low/90 backdrop-blur-md flex items-center gap-1 shadow-sm">
+<button class="flex-1 py-2 px-3 rounded-[12px] bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm flex items-center justify-center gap-1.5 transition-all" id="tab-btn-projects" onclick="switchView('projects')">
+<span class="material-symbols-outlined text-[17px]">folder_open</span>
+<span>Artifacts (4)</span>
+</button>
+<button class="flex-1 py-2 px-3 rounded-[12px] text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all hover:text-on-surface" id="tab-btn-badges" onclick="switchView('badges')">
+<span class="material-symbols-outlined text-[17px]">token</span>
+<span>Badges &amp; XP (12)</span>
+</button>
+</div>
+<!-- Section 1: Uploaded Projects Showcase -->
+<section class="space-y-space-sm transition-opacity duration-300" id="section-projects">
+<!-- Header with Action -->
+<div class="flex items-center justify-between pt-1">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Featured Artifacts</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Vetted deliverables reviewed by AI rubric</p>
+</div>
+<button class="inline-flex items-center gap-1 px-3 py-1.5 rounded-[12px] bg-primary-container/15 text-primary font-label-sm text-label-sm hover:bg-primary-container/25 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[15px]">add</span>
+<span>Upload</span>
+</button>
+</div>
+<!-- Project Cards Grid (2-column mobile layout) -->
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Project 1 -->
+<article class="flex flex-col rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md p-2.5 shadow-[0_8px_20px_-8px_rgba(100,116,139,0.06)] active:scale-[0.98] transition-transform">
+<div class="relative w-full aspect-[4/3] rounded-[14px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A clean modern digital user interface screen displaying an adaptive AI chatbot with teal conversational bubbles and sleek canvas workspace wireframes, soft neutral studio lighting, high resolution Figma product mockup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVp8GilErmICEcMzdyJ12fYoFe7NmFKeJZw0kC9mL5WgBb69eADRLT5FDjsEfmM_u9xh4Jc6Iz49p9qlqBknsVZYjrtGc4eiDSyRJ6ot_HH4NkjLs_NPbd_kTskCVQBi8_5z81-jDBrkxreBN_MEhGaGaeB75JPNeJYLHe36q1Kc9m-RPs2GxfsQ9YURjZF5-3DQd1oLbrry_yZnTKe9goKDEGCN-wBGGeK-XGR2PmSHU8crmoS0ndzQ"/>
+<div class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<span>Master</span>
+</div>
+</div>
+<div class="p-1.5 flex flex-col flex-1 justify-between gap-1.5 mt-0.5">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-1">Adaptive Chatbot &amp; Canvas</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Figma • AI Systems</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+<span>142</span>
+</span>
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Project 2 -->
+<article class="flex flex-col rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md p-2.5 shadow-[0_8px_20px_-8px_rgba(100,116,139,0.06)] active:scale-[0.98] transition-transform">
+<div class="relative w-full aspect-[4/3] rounded-[14px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="An intricate autonomous agent workflow dashboard illustrating branching decision trees, node connectors in muted lavender and cyan glowing lines, clean executive UI chart display" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrE9aDieO0Jbrn26TdOe7e1T7tHysarj-c0lpHAxF6zGmnyda6dZA-rMuxaBxL_oMjfCwzUKW-1zqdZ47QpX3YtcKWWVlE2iNxWG7IxUH08vreRru-poXjXsQNw6gaA5PMlwHziXpeHoTozK-gbRY98G79mGlUcw7FVmZ1-we32dUcNZjl4vTh0oPkOg8szV5Rmo80wxgu0POujvbLI9DAuv-KWb05WObs6zwwPD-EPtQVVXk-2BXQWA"/>
+<div class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">groups</span>
+<span>Reviewed</span>
+</div>
+</div>
+<div class="p-1.5 flex flex-col flex-1 justify-between gap-1.5 mt-0.5">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-1">Autonomous Agent Hub</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">UX Research • LLMs</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+<span>98</span>
+</span>
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Project 3 -->
+<article class="flex flex-col rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md p-2.5 shadow-[0_8px_20px_-8px_rgba(100,116,139,0.06)] active:scale-[0.98] transition-transform">
+<div class="relative w-full aspect-[4/3] rounded-[14px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A sophisticated design system token library display with glass cards containing color swatches, typography scales in teal and violet, and code snippets in JSON formatting, clean studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAu9ylBBXW2K9zX_OxwqIAb2LuMic8kqAIhVaf-SW3v3LEgQ2fMIRZoM6ovsbx-YwSed2lzVEx2X3fp8sI9VK06sPYP69OKigBA6_CD7Aa5Jja40Z5xEjY4ahpdRVE3nAHI4f_-xUhk3Qsdb7Y5qIPa8YqEzbjlyaczwvKNJIO6UPw2Z_tyn77CdCDccLKiEuF0ihuf0bOUiGDwJNgjKYnmJv7loG9cjaLsK9eCr1rSzE2_CBigJzxpDA"/>
+<div class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm text-primary font-label-sm text-label-sm shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>Staff Pick</span>
+</div>
+</div>
+<div class="p-1.5 flex flex-col flex-1 justify-between gap-1.5 mt-0.5">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-1">Enterprise Token Engine</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Design System • Code</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+<span>215</span>
+</span>
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+<!-- Project 4 -->
+<article class="flex flex-col rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md p-2.5 shadow-[0_8px_20px_-8px_rgba(100,116,139,0.06)] active:scale-[0.98] transition-transform">
+<div class="relative w-full aspect-[4/3] rounded-[14px] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="A product analytics and conversion funnel visualization screen featuring sleek gradient bar graphs, user retention cohort diagrams, and conversion benchmarks in muted teal and violet accents" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk4eP4rSaFWavQ_47-JLoACeneHGCI1_Y2RUna3sm4QgjCU9r1sDBlz8vBt-vL9yoDARrvFtDy37h_pELH-JaPA_k8y3gbhnghqXPE819m4WMMsFCZ5lxNNUWmujoR4U70kqy1hclC7eB4Y9zO2mRbA0HPPAxlnJEVQU110Kc2JPLUP12vtBMXNiLCZTn01mFa63hX9k8-GpRcY3lreiZtsqcPHbEWU8Eej2iuiJCsv8j8nFTI7OqqaQ"/>
+<div class="absolute top-1.5 right-1.5 px-1.5 py-0.5 rounded-[6px] bg-surface-container-lowest/90 backdrop-blur-sm text-on-surface-variant font-label-sm text-label-sm shadow-sm flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[11px]">insights</span>
+<span>Case Study</span>
+</div>
+</div>
+<div class="p-1.5 flex flex-col flex-1 justify-between gap-1.5 mt-0.5">
+<div>
+<h4 class="font-label-md text-label-md text-on-surface line-clamp-1">Mixpanel Funnel Audit</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Data Strategy • Metrics</p>
+</div>
+<div class="flex items-center justify-between pt-1">
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[13px]">visibility</span>
+<span>73</span>
+</span>
+<span class="material-symbols-outlined text-primary text-[16px]">arrow_forward</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Section 2: Gamification & Hexagonal Mastery Badges -->
+<section class="space-y-space-sm pt-2" id="section-badges">
+<!-- Section Header -->
+<div class="flex items-start justify-between">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Mastery Badges &amp; Milestones</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hexagonal credentials verified by Lumina Rubric</p>
+</div>
+<span class="px-2 py-1 rounded-[10px] bg-secondary-fixed text-secondary font-label-sm text-label-sm shrink-0">
+          12 of 18 Unlocked
+        </span>
+</div>
+<!-- XP & Recruiter Spotlight Tier Card (20px rounded) -->
+<div class="rounded-[20px] bg-gradient-to-r from-surface-container-lowest/90 via-surface-container-lowest/80 to-secondary-fixed/20 backdrop-blur-md p-space-md shadow-[0_8px_24px_-8px_rgba(100,116,139,0.08)]">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container/30 text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Level 8 Career Architect</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Next: Tier-1 Recruiter Spotlight</p>
+</div>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">2,450 / 3,000 XP</span>
+</div>
+<!-- Progress bar -->
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full rounded-full bg-gradient-to-r from-primary-container to-secondary-container transition-all duration-500" style="width: 81.6%;"></div>
+</div>
+<div class="mt-2 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span>550 XP remaining to unlock automatic interview priority</span>
+<span class="text-secondary font-medium">82%</span>
+</div>
+</div>
+<!-- Hexagonal Badges Grid (3 columns) -->
+<div class="grid grid-cols-3 gap-2.5">
+<!-- Badge 1: Prompt Pioneer -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-lowest/70 backdrop-blur-sm text-center shadow-sm">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full filter drop-shadow-[0_2px_6px_rgba(38,166,154,0.25)]" fill="none" viewbox="0 0 100 115">
+<polygon fill="#e7f8f6" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#26a69a" stroke-width="3"></polygon>
+</svg>
+<span class="material-symbols-outlined text-primary text-[24px] relative z-10" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5 leading-tight">Prompt Pioneer</h5>
+<span class="font-body-sm text-body-sm text-primary text-[11px] leading-tight">Level 3</span>
+</div>
+<!-- Badge 2: Radar Calibrated (Inspiration Compass Style) -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-lowest/70 backdrop-blur-sm text-center shadow-sm">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full filter drop-shadow-[0_2px_6px_rgba(111,72,178,0.25)]" fill="none" viewbox="0 0 100 115">
+<polygon fill="#f4edff" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#6f48b2" stroke-width="3"></polygon>
+</svg>
+<span class="material-symbols-outlined text-secondary text-[24px] relative z-10" style="font-variation-settings: 'FILL' 1;">explore</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5 leading-tight">Radar Tuned</h5>
+<span class="font-body-sm text-body-sm text-secondary text-[11px] leading-tight">Top 5%</span>
+</div>
+<!-- Badge 3: System Architect -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-lowest/70 backdrop-blur-sm text-center shadow-sm">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full filter drop-shadow-[0_2px_6px_rgba(0,106,98,0.2)]" fill="none" viewbox="0 0 100 115">
+<polygon fill="#e0f2f1" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#006a62" stroke-width="3"></polygon>
+</svg>
+<span class="material-symbols-outlined text-primary text-[24px] relative z-10" style="font-variation-settings: 'FILL' 1;">deployed_code</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5 leading-tight">System Core</h5>
+<span class="font-body-sm text-body-sm text-primary text-[11px] leading-tight">Rubric Tier 1</span>
+</div>
+<!-- Badge 4: Telemetry Hacker -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-lowest/70 backdrop-blur-sm text-center shadow-sm">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full filter drop-shadow-[0_2px_6px_rgba(38,166,154,0.2)]" fill="none" viewbox="0 0 100 115">
+<polygon fill="#e7f8f6" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#26a69a" stroke-width="3"></polygon>
+</svg>
+<span class="material-symbols-outlined text-primary text-[24px] relative z-10" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5 leading-tight">Telemetry Pro</h5>
+<span class="font-body-sm text-body-sm text-primary text-[11px] leading-tight">Verified</span>
+</div>
+<!-- Badge 5: Agent Whisperer -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-lowest/70 backdrop-blur-sm text-center shadow-sm">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full filter drop-shadow-[0_2px_6px_rgba(111,72,178,0.2)]" fill="none" viewbox="0 0 100 115">
+<polygon fill="#f4edff" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#6f48b2" stroke-width="3"></polygon>
+</svg>
+<span class="material-symbols-outlined text-secondary text-[24px] relative z-10" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface font-semibold mt-1.5 leading-tight">Agent Guru</h5>
+<span class="font-body-sm text-body-sm text-secondary text-[11px] leading-tight">Earned Oct 18</span>
+</div>
+<!-- Badge 6: Locked / Next Goal -->
+<div class="flex flex-col items-center p-3 rounded-[20px] bg-surface-container-low/40 backdrop-blur-sm text-center opacity-70">
+<div class="relative w-14 h-16 flex items-center justify-center">
+<svg class="absolute inset-0 w-full h-full" fill="none" viewbox="0 0 100 115">
+<polygon fill="none" points="50 0, 100 28.8, 100 86.2, 50 115, 0 86.2, 0 28.8" stroke="#6d7a77" stroke-dasharray="6 4" stroke-width="2"></polygon>
+</svg>
+<span class="material-symbols-outlined text-on-surface-variant text-[22px] relative z-10">lock</span>
+</div>
+<h5 class="font-label-sm text-label-sm text-on-surface-variant font-medium mt-1.5 leading-tight">Fast-Track</h5>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">+1 project</span>
+</div>
+</div>
+</section>
+<!-- Recruiter Proof Feedback Glass Note -->
+<div class="rounded-[20px] bg-surface-container-lowest/80 backdrop-blur-md p-space-md shadow-sm flex items-start gap-space-sm">
+<div class="w-10 h-10 rounded-[14px] bg-primary-container/15 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<h4 class="font-label-md text-label-md text-on-surface font-semibold">AI Trajectory Endorsement</h4>
+<span class="font-label-sm text-label-sm text-primary">Live</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+          "Alex's tokens and conversational systems demonstrate exceptional readiness for L5 Senior Product Design openings."
+        </p>
+</div>
+</div>
+</div>
+<!-- Share Toast Element -->
+<div class="fixed bottom-24 left-1/2 -translate-x-1/2 px-4 py-2 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md shadow-lg pointer-events-none opacity-0 transition-opacity duration-300 z-50 flex items-center gap-2" id="share-toast">
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">done_all</span>
+<span>Portfolio link copied to clipboard</span>
+</div>
+</div>
+<script>
+  function switchView(tab) {
+    const projTab = document.getElementById('tab-btn-projects');
+    const badgeTab = document.getElementById('tab-btn-badges');
+    const projSection = document.getElementById('section-projects');
+    const badgeSection = document.getElementById('section-badges');
+
+    if (tab === 'projects') {
+      projTab.className = "flex-1 py-2 px-3 rounded-[12px] bg-surface-container-lowest text-primary font-label-md text-label-md shadow-sm flex items-center justify-center gap-1.5 transition-all";
+      badgeTab.className = "flex-1 py-2 px-3 rounded-[12px] text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all hover:text-on-surface";
+      projSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    } else {
+      badgeTab.className = "flex-1 py-2 px-3 rounded-[12px] bg-surface-container-lowest text-secondary font-label-md text-label-md shadow-sm flex items-center justify-center gap-1.5 transition-all";
+      projTab.className = "flex-1 py-2 px-3 rounded-[12px] text-on-surface-variant font-label-md text-label-md flex items-center justify-center gap-1.5 transition-all hover:text-on-surface";
+      badgeSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  function triggerShareNotice() {
+    const toast = document.getElementById('share-toast');
+    if (toast) {
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+      setTimeout(() => {
+        toast.classList.remove('opacity-100');
+        toast.classList.add('opacity-0');
+      }, 2400);
+    }
+  }
+</script>
+</main>
+<!-- Bottom Floating Glass Navigation Bar (5 Core Tabs) -->
+<div class="fixed bottom-0 w-full z-50 pb-safe px-3 pointer-events-none mb-3">
+<nav class="pointer-events-auto mx-auto max-w-md bg-surface-container-lowest/85 backdrop-blur-xl border border-surface-container-lowest/90 shadow-[0_12px_32px_-8px_rgba(100,116,139,0.16)] rounded-[24px] px-1.5 py-1.5 flex items-center justify-between" data-active-classes="bg-primary-container/15 text-primary font-label-md shadow-sm">
+<!-- Tab 1: Dashboard -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="dashboard" href="#">
+<span class="material-symbols-outlined text-[22px]">dashboard</span>
+<span class="font-label-sm text-label-sm mt-0.5">Dashboard</span>
+</a>
+<!-- Tab 2: Learning -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="learning" href="#">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+<span class="font-label-sm text-label-sm mt-0.5">Learning</span>
+</a>
+<!-- Tab 3: Jobs -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="jobs" href="#">
+<span class="material-symbols-outlined text-[22px]">work_outline</span>
+<span class="font-label-sm text-label-sm mt-0.5">Jobs</span>
+</a>
+<!-- Tab 4: Roadmap -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="roadmap" href="#">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+<span class="font-label-sm text-label-sm mt-0.5">Roadmap</span>
+</a>
+<!-- Tab 5: Profile / Portfolio -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="profile" href="#">
+<span class="material-symbols-outlined text-[22px]">person</span>
+<span class="font-label-sm text-label-sm mt-0.5">Profile</span>
+</a>
+</nav>
+</div>
+</body></html>

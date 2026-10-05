@@ -1,0 +1,312 @@
+[
+    {
+        "id": "c1",
+        "title": "The Complete Flutter & Dart Bootcamp",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1617042375876-a13e36732a04?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "flutter",
+            "dart",
+            "mobile",
+            "frontend"
+        ]
+    },
+    {
+        "id": "c2",
+        "title": "Flutter Advanced: State Management & Architecture",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "flutter",
+            "dart",
+            "architecture",
+            "state management"
+        ]
+    },
+    {
+        "id": "c3",
+        "title": "100 Days of Code: The Complete Python Pro Bootcamp",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "python",
+            "backend",
+            "programming"
+        ]
+    },
+    {
+        "id": "c4",
+        "title": "FastAPI - The Complete Course 2026",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1555099962-4199c345e5dd?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "fastapi",
+            "python",
+            "backend",
+            "api"
+        ]
+    },
+    {
+        "id": "c5",
+        "title": "React - The Complete Guide (incl Hooks, React Router, Redux)",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "react",
+            "react.js",
+            "frontend",
+            "javascript"
+        ]
+    },
+    {
+        "id": "c6",
+        "title": "Next.js 15 & React - The Complete Guide",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "next.js",
+            "react.js",
+            "frontend",
+            "ssr"
+        ]
+    },
+    {
+        "id": "c7",
+        "title": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1526738549149-8e07eca6c147?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "node.js",
+            "backend",
+            "javascript"
+        ]
+    },
+    {
+        "id": "c8",
+        "title": "Docker Mastery: with Kubernetes +Swarm from a Docker Captain",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "docker",
+            "devops",
+            "kubernetes"
+        ]
+    },
+    {
+        "id": "c9",
+        "title": "Ultimate AWS Certified Solutions Architect Associate",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "aws",
+            "cloud",
+            "devops"
+        ]
+    },
+    {
+        "id": "c10",
+        "title": "MongoDB - The Complete Developer Guide",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "mongodb",
+            "database",
+            "nosql"
+        ]
+    },
+    {
+        "id": "c11",
+        "title": "PostgreSQL: Advanced SQL Queries & Data Analysis",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "postgresql",
+            "database",
+            "sql"
+        ]
+    },
+    {
+        "id": "c12",
+        "title": "IoT with ESP8266 and Arduino - Complete Guide",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "iot",
+            "esp8266",
+            "arduino",
+            "hardware"
+        ]
+    },
+    {
+        "id": "c13",
+        "title": "Machine Learning A-Z: AI, Python & R",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "python",
+            "ai",
+            "machine learning"
+        ]
+    },
+    {
+        "id": "c14",
+        "title": "Mastering Dart Programming for Mobile Development",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "dart",
+            "flutter",
+            "mobile"
+        ]
+    },
+    {
+        "id": "c15",
+        "title": "Microservices with Node JS and React",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "react.js",
+            "node.js",
+            "microservices"
+        ]
+    },
+    {
+        "id": "c16",
+        "title": "Building Scalable APIs with FastAPI and PostgreSQL",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "fastapi",
+            "python",
+            "postgresql",
+            "api"
+        ]
+    },
+    {
+        "id": "c17",
+        "title": "Advanced AWS Cloud Architecture Design",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "aws",
+            "cloud",
+            "architecture"
+        ]
+    },
+    {
+        "id": "c18",
+        "title": "Complete Next.js Developer Course - Build Production Apps",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "next.js",
+            "react.js",
+            "frontend"
+        ]
+    },
+    {
+        "id": "c19",
+        "title": "Flutter & Firebase: Build a Complete App",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1617042375876-a13e36732a04?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "flutter",
+            "dart",
+            "firebase",
+            "mobile"
+        ]
+    },
+    {
+        "id": "c20",
+        "title": "Python for Data Science and Machine Learning Bootcamp",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "python",
+            "data science",
+            "machine learning"
+        ]
+    },
+    {
+        "id": "c21",
+        "title": "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "react.js",
+            "node.js",
+            "mongodb",
+            "fullstack"
+        ]
+    },
+    {
+        "id": "c22",
+        "title": "Internet of Things (IoT) Security and Architecture",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "iot",
+            "security",
+            "hardware"
+        ]
+    },
+    {
+        "id": "c23",
+        "title": "Docker & Kubernetes: The Practical Guide",
+        "provider": "Coursera",
+        "thumbnail_url": "https://images.unsplash.com/photo-1605745341112-85968b19335b?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.coursera.org/",
+        "tags": [
+            "docker",
+            "kubernetes",
+            "devops"
+        ]
+    },
+    {
+        "id": "c24",
+        "title": "Modern React with Redux",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "react",
+            "react.js",
+            "redux",
+            "frontend"
+        ]
+    },
+    {
+        "id": "c25",
+        "title": "Mastering PostgreSQL Administration",
+        "provider": "Udemy",
+        "thumbnail_url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=500&q=60",
+        "url": "https://www.udemy.com/",
+        "tags": [
+            "postgresql",
+            "database",
+            "administration"
+        ]
+    }
+]

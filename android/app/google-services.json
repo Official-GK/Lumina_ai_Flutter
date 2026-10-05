@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "996856236262",
+    "project_id": "ai-career--skill",
+    "storage_bucket": "ai-career--skill.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996856236262:android:e8c5c1ee79549ace2b5327",
+        "android_client_info": {
+          "package_name": "com.example.lumina_career"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaZ5AtYzpQE6YO0dYZQH5YEd0_iWXSFa0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────
+# Lumina Career AI — Python Dependencies
+# ──────────────────────────────────────────────
+
+# Web Framework & ASGI Server
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+
+# Firebase Admin SDK (Auth token verification + Firestore)
+firebase-admin==6.5.0
+
+# Google Gemini AI
+google-generativeai==0.7.2
+
+# PDF text extraction
+pdfplumber==0.11.1
+
+# FastAPI file upload support
+python-multipart==0.0.9
+
+# Data validation (FastAPI dependency)
+pydantic==2.7.1
+
+# HTTP client (used internally by google-generativeai)
+httpx==0.27.0
+
+# Load .env file in local development
+python-dotenv==1.0.1

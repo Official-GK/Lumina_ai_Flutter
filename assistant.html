@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#f9f9ff;}body{overscroll-behavior:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#d8e3fb", "on-tertiary": "#ffffff", "tertiary-fixed-dim": "#71d7cd", "surface-tint": "#006a62", "error-container": "#ffdad6", "secondary-fixed": "#ebdcff", "on-primary": "#ffffff", "on-tertiary-fixed-variant": "#00504a", "on-secondary-fixed-variant": "#572e99", "primary-fixed-dim": "#66d9cc", "on-secondary-container": "#491d8a", "tertiary-fixed": "#8ef4e9", "primary": "#006a62", "surface-bright": "#f9f9ff", "inverse-primary": "#66d9cc", "on-surface-variant": "#3d4947", "secondary": "#6f48b2", "outline": "#6d7a77", "background": "#f9f9ff", "surface-container": "#e7eeff", "secondary-fixed-dim": "#d4bbff", "surface": "#f9f9ff", "on-primary-container": "#003430", "secondary-container": "#b78efe", "inverse-on-surface": "#ecf1ff", "on-error-container": "#93000a", "surface-container-low": "#f0f3ff", "error": "#ba1a1a", "on-background": "#111c2d", "on-secondary-fixed": "#260058", "on-secondary": "#ffffff", "primary-container": "#26a69a", "outline-variant": "bcc9c6", "on-primary-fixed": "#00201d", "surface-variant": "#d8e3fb", "on-tertiary-container": "#003430", "on-surface": "#111c2d", "surface-container-lowest": "#ffffff", "tertiary-container": "#39a59b", "primary-fixed": "#84f5e8", "on-primary-fixed-variant": "#005049", "on-tertiary-fixed": "#00201d", "surface-container-high": "#dee8ff", "tertiary": "#006a63", "on-error": "#ffffff", "surface-dim": "#cfdaf2", "inverse-surface": "#263143" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "space-xl": "2rem", "margin": "1.25rem", "space-lg": "1.5rem" }, fontFamily: { "body-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["26px", { "lineHeight": "34px", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen flex flex-col selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 rounded-full flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><img alt="Brand logo. - Primary color: #26a69a
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WRbrADognoGRw_tOSOIBO2qkMkPSQrzPGoUedNUh8uwuK7o37bwJA0Hf49fKIq4dmcKUsBHtLvz7pVYntKULdkS9dckE19-AyAGZWsqO5LGy7k5tMD_NoGjsfkwLbBAIDVwRw72FJonndsl3rLUved6FNE8LD83DSLCaVJiTM47JB0AwayigZ0wQKzIUDqmjv0sjtkOi7LNIYITkEdYFGWfRQxo1usSaVr70PMroTrxCKfznbu1qpSHmk"/><div class="flex flex-col ml-1"><div class="flex items-center gap-1.5"><h1 class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Career Assistant Chat</h1><span class="inline-flex w-2 h-2 rounded-full bg-primary animate-pulse" title="AI Online"></span></div><div class="flex items-center gap-1 mt-0.5"><span class="font-label-sm text-label-sm text-secondary font-medium">Claude 3.5 Sonnet</span><span class="material-symbols-outlined text-[12px] text-secondary">expand_more</span></div></div></div><div class="flex items-center gap-space-xs"><button aria-label="Audio mode" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">graphic_eq</span></button><button aria-label="Settings" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="p-0.5 rounded-full bg-secondary-fixed/50 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WcJnVZOkmT97a6UAXYca2JyRVUEZJos30OceQRcphqHujd2-ShnQ2FbfQjT5w1Zx6JXrQ-n1xB0Cbj_CT-7a36nBbvYaPNq0FwoKMFUbrt1GTyW0RvRPoqngsfR3k0_b-EAm07Jimf-UZ-HClAd566NvSIqoK9JwcjEMOBk9KL3eqObWGEDWsh2mc5QFvcoUuiPcLsq1NvE-ifrO7u5xoTrqBRK3xvzhojh22r8d_y6D6_DpFpiK7bMBA9"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full relative pb-36">
+<!-- Ambient Atmospheric Nodes behind chat canvas -->
+<div class="fixed top-20 left-4 w-64 h-64 rounded-full bg-primary-fixed-dim/20 blur-3xl pointer-events-none -z-10"></div>
+<div class="fixed top-80 right-2 w-72 h-72 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="fixed bottom-32 left-10 w-80 h-80 rounded-full bg-tertiary-fixed/20 blur-3xl pointer-events-none -z-10"></div>
+<!-- Top Session Context Banner -->
+<section class="sticky top-0 z-30 px-margin pt-space-xs pb-space-sm backdrop-blur-xl bg-surface/75 border-b border-surface-container-highest/60 transition-all duration-200">
+<!-- Targeting Meta Card -->
+<div class="w-full bg-surface-container-lowest/85 backdrop-blur-md rounded-2xl p-3.5 shadow-sm border border-white/80 flex items-center justify-between gap-3">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-xl bg-primary-container/15 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[19px]">work_history</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Target: Senior AI Product Designer</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded-full text-[10px] font-label-sm font-semibold bg-tertiary-fixed text-on-tertiary-container">Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">
+<span class="font-semibold text-primary">68% Match</span> • Rubric calibrated to Anthropic &amp; OpenAI
+          </p>
+</div>
+</div>
+<button aria-label="Target settings" class="shrink-0 w-8 h-8 rounded-full bg-surface-container-low flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Quick Action Horizontal Scrollable Chips -->
+<div class="flex items-center gap-2 overflow-x-auto no-scrollbar pt-2.5 -mx-margin px-margin">
+<button class="whitespace-nowrap shrink-0 flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-white/90 text-on-surface font-label-md text-label-md shadow-sm active:scale-95 transition-all hover:bg-surface-container" onclick="handleQuickPrompt(this)">
+<span class="material-symbols-outlined text-[14px] text-primary">auto_fix_high</span>
+        Critique my portfolio
+      </button>
+<button class="whitespace-nowrap shrink-0 flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-white/90 text-on-surface font-label-md text-label-md shadow-sm active:scale-95 transition-all hover:bg-surface-container" onclick="handleQuickPrompt(this)">
+<span class="material-symbols-outlined text-[14px] text-secondary">terminal</span>
+        Prepare for Stripe interview
+      </button>
+<button class="whitespace-nowrap shrink-0 flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-white/90 text-on-surface font-label-md text-label-md shadow-sm active:scale-95 transition-all hover:bg-surface-container" onclick="handleQuickPrompt(this)">
+<span class="material-symbols-outlined text-[14px] text-primary">insights</span>
+        Explain SQL telemetry gap
+      </button>
+<button class="whitespace-nowrap shrink-0 flex items-center gap-1.5 py-1.5 px-3 rounded-full bg-surface-container-lowest/90 backdrop-blur-md border border-white/90 text-on-surface font-label-md text-label-md shadow-sm active:scale-95 transition-all hover:bg-surface-container" onclick="handleQuickPrompt(this)">
+<span class="material-symbols-outlined text-[14px] text-secondary">payments</span>
+        Salary negotiation tips
+      </button>
+</div>
+</section>
+<!-- Chat Message Stream -->
+<section class="flex flex-col px-margin pt-4 space-y-4">
+<!-- Timestamp Divider -->
+<div class="flex items-center justify-center my-1">
+<div class="px-3 py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md border border-white/50 text-on-surface-variant font-label-sm text-label-sm shadow-sm">
+        Today, 10:42 AM
+      </div>
+</div>
+<!-- User Bubble 1 (Right) -->
+<div class="flex flex-col items-end self-end max-w-[86%]">
+<div class="bg-gradient-to-br from-primary-container via-primary-container/95 to-secondary-container/90 text-white px-4 py-3.5 rounded-[22px] rounded-br-[6px] shadow-md border border-white/20">
+<p class="font-body-md text-body-md leading-relaxed text-white">
+          Hey Lumina! Anthropic just opened an <span class="font-semibold underline decoration-white/40 underline-offset-2">AI Interface &amp; Alignment Experience Designer</span> role. Can you review my roadmap gaps and suggest how to frame my LLM telemetry project?
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-1 pr-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">10:43 AM</span>
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+<!-- Lumina AI Assistant Bubble 1 (Left) -->
+<div class="flex flex-col items-start self-start max-w-[94%]">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl rounded-[22px] rounded-tl-[6px] p-4 shadow-[0_8px_24px_-6px_rgba(100,116,139,0.12)] border border-white/90">
+<!-- Lumina Assistant Identity Header -->
+<div class="flex items-center justify-between pb-3 border-b border-surface-container-highest/60 mb-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-lg bg-gradient-to-tr from-primary to-secondary flex items-center justify-center text-white shadow-xs">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Lumina Career AI</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">• Trajectory Coach</span>
+</div>
+<button class="text-on-surface-variant hover:text-primary transition-colors" title="Bookmark Insight">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+</div>
+<!-- AI Core Guidance -->
+<div class="space-y-3 font-body-md text-body-md text-on-surface leading-relaxed">
+<p>
+            Great timing! Anthropic's rubrics emphasize <strong class="font-semibold text-primary">human-in-the-loop safety UX</strong> and multi-modal alignment affordances. Here is how we should position you:
+          </p>
+<div class="space-y-2 pt-1">
+<div class="flex items-start gap-2.5 p-2 rounded-xl bg-surface-container-low/80 border border-white/60">
+<span class="inline-flex w-5 h-5 rounded-full bg-primary-container text-white text-[11px] font-bold items-center justify-center shrink-0 mt-0.5">1</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-on-surface">Highlight Lab 4 Artifact:</strong> Emphasize your Adaptive Chatbot UI tokens and confidence score visualizers.
+              </p>
+</div>
+<div class="flex items-start gap-2.5 p-2 rounded-xl bg-surface-container-low/80 border border-white/60">
+<span class="inline-flex w-5 h-5 rounded-full bg-secondary text-white text-[11px] font-bold items-center justify-center shrink-0 mt-0.5">2</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong class="font-semibold text-on-surface">Bridge the Telemetry Gap:</strong> Anthropic indexes heavily on quantitative evaluators. Anchor your story to your Mixpanel Funnel study.
+              </p>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant pt-1">
+            I've synthesized a targeted mock drill modeled after their standard technical screener.
+          </p>
+</div>
+<!-- Embedded Interactive Mini Card -->
+<div class="mt-3.5 p-3.5 rounded-xl bg-gradient-to-br from-surface-container-lowest via-surface-container-low/90 to-surface-container/60 border border-white/90 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<div class="w-2 h-2 rounded-full bg-primary animate-ping"></div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Anthropic Match Analysis</span>
+</div>
+<span class="font-label-sm text-label-sm font-bold px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant">85% Fit</span>
+</div>
+<!-- Micro Metric Bar -->
+<div class="w-full bg-surface-container rounded-full h-1.5 mb-2.5 overflow-hidden">
+<div class="bg-gradient-to-r from-primary to-secondary h-1.5 rounded-full" style="width: 85%;"></div>
+</div>
+<div class="flex items-center justify-between text-[11px] font-label-sm text-on-surface-variant mb-3">
+<span>Core UX: Exceptional</span>
+<span class="text-secondary font-medium">2 Priority Gaps in Telemetry</span>
+</div>
+<!-- Card Actions -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="w-full py-2 px-3 rounded-lg bg-primary text-white font-label-md text-label-md font-semibold shadow-sm hover:opacity-95 active:scale-95 transition-all flex items-center justify-center gap-1.5" onclick="startInterviewDrill()">
+<span class="material-symbols-outlined text-[15px]">timer</span>
+              Start 5-min Drill
+            </button>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-highest/70 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold border border-white/70 active:scale-95 transition-all flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-secondary">schema</span>
+              View Rubric
+            </button>
+</div>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 mt-1 pl-1">10:44 AM</span>
+</div>
+<!-- User Bubble 2 (Right) -->
+<div class="flex flex-col items-end self-end max-w-[84%]">
+<div class="bg-gradient-to-br from-primary-container via-primary-container/95 to-secondary-container/90 text-white px-4 py-3 rounded-[22px] rounded-br-[6px] shadow-md border border-white/20">
+<p class="font-body-md text-body-md leading-relaxed text-white">
+          Awesome! Let's do a quick question on handling streaming latency states.
+        </p>
+</div>
+<div class="flex items-center gap-1 mt-1 pr-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">10:45 AM</span>
+<span class="material-symbols-outlined text-[14px] text-primary" style="font-variation-settings: 'FILL' 1;">done_all</span>
+</div>
+</div>
+<!-- Lumina AI Assistant Bubble 2 (Interactive Question) -->
+<div class="flex flex-col items-start self-start max-w-[94%]">
+<div class="bg-surface-container-lowest/90 backdrop-blur-xl rounded-[22px] rounded-tl-[6px] p-4 shadow-[0_8px_24px_-6px_rgba(100,116,139,0.12)] border border-white/90 w-full">
+<!-- Interactive Tag -->
+<div class="flex items-center justify-between pb-2.5 mb-2 border-b border-surface-container-highest/60">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">quiz</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Question 1 of 3</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed text-[10px] font-label-sm font-semibold">Live Simulator</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-snug font-medium mb-3.5">
+          How do you design user affordances when an LLM response experiences unpredictable token latency or partial halts?
+        </p>
+<!-- Response Option Pills -->
+<div class="space-y-2" id="quizOptions">
+<button class="w-full text-left p-3 rounded-xl bg-surface-container-low/70 hover:bg-surface-container border border-white/80 active:scale-[0.99] transition-all flex items-start gap-2.5 group" onclick="selectOption(this, 1)">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-primary group-hover:text-white transition-colors">A</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">Micro-skeleton shimmering with optimistic token pre-render states</span>
+</button>
+<button class="w-full text-left p-3 rounded-xl bg-surface-container-low/70 hover:bg-surface-container border border-white/80 active:scale-[0.99] transition-all flex items-start gap-2.5 group" onclick="selectOption(this, 2)">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-primary group-hover:text-white transition-colors">B</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">Progress state indicator with graceful fallback to batch inference</span>
+</button>
+<button class="w-full text-left p-3 rounded-xl bg-surface-container-low/70 hover:bg-surface-container border border-white/80 active:scale-[0.99] transition-all flex items-start gap-2.5 group" onclick="selectOption(this, 3)">
+<span class="w-5 h-5 rounded-full bg-surface-container-highest text-on-surface text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-primary group-hover:text-white transition-colors">C</span>
+<span class="font-body-sm text-body-sm text-on-surface leading-snug">Streaming typewriter rhythm with an explicit user cancellation affordance</span>
+</button>
+</div>
+<div class="hidden mt-3 p-2.5 rounded-xl bg-primary-fixed/30 border border-primary-fixed-dim text-on-primary-fixed-variant font-body-sm text-body-sm transition-all duration-300" id="quizFeedback">
+<div class="flex items-center gap-1.5 font-bold mb-0.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+            Optimal Alignment Answer!
+          </div>
+          Anthropic's Design Principles favor explicit control over speculative rendering during degraded network conditions.
+        </div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70 mt-1 pl-1">Just now</span>
+</div>
+</section>
+<!-- Sleek Floating Bottom Input Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface/85 backdrop-blur-2xl border-t border-white/80 px-margin pt-2.5 pb-safe pb-3 shadow-[0_-4px_24px_rgba(0,0,0,0.04)]">
+<!-- Active Context Pill -->
+<div class="flex items-center justify-between mb-2 px-1">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Context: Anthropic Rubric Review</span>
+</div>
+<button class="font-label-sm text-label-sm text-secondary font-semibold hover:underline flex items-center gap-0.5">
+<span>Attach PDF Resume</span>
+<span class="material-symbols-outlined text-[13px]">attachment</span>
+</button>
+</div>
+<!-- Input Bar Controls -->
+<div class="flex items-center gap-2">
+<!-- Media / Plus Action -->
+<button aria-label="Add attachment or portfolio URL" class="w-10 h-10 rounded-full bg-surface-container-lowest border border-white/90 flex items-center justify-center text-on-surface-variant hover:text-primary shadow-sm active:scale-95 transition-all shrink-0">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</button>
+<!-- Pill Input Field -->
+<div class="flex-1 min-w-0 relative flex items-center">
+<input class="w-full bg-surface-container-lowest/90 backdrop-blur-md rounded-full py-2.5 pl-4 pr-10 border border-surface-container-highest focus:border-primary focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-on-surface-variant/50 font-body-sm text-body-sm shadow-inner transition-all outline-none" id="chatInput" placeholder="Ask Lumina anything about your career..." type="text"/>
+<button aria-label="Voice input" class="absolute right-2.5 text-on-surface-variant/70 hover:text-primary transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+</button>
+</div>
+<!-- Circular Send Button -->
+<button aria-label="Send message" class="w-10 h-10 rounded-full bg-gradient-to-tr from-primary to-secondary text-white flex items-center justify-center shadow-md hover:opacity-95 active:scale-90 transition-all shrink-0" onclick="sendChatMessage()">
+<span class="material-symbols-outlined text-[19px]">arrow_upward</span>
+</button>
+</div>
+<!-- Model Calibration Micro Disclaimer -->
+<div class="text-center mt-2">
+<p class="font-label-sm text-label-sm text-on-surface-variant/60 tracking-tight">
+        Lumina models are calibrated against 35k+ live hiring rubrics.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  function handleQuickPrompt(button) {
+    const text = button.innerText.trim();
+    const input = document.getElementById('chatInput');
+    if (input) {
+      input.value = text;
+      input.focus();
+    }
+  }
+
+  function startInterviewDrill() {
+    const quizSection = document.getElementById('quizOptions');
+    if (quizSection) {
+      quizSection.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }
+
+  function selectOption(button, index) {
+    const container = document.getElementById('quizOptions');
+    const feedback = document.getElementById('quizFeedback');
+    if (!container) return;
+
+    const allButtons = container.querySelectorAll('button');
+    allButtons.forEach(btn => {
+      btn.classList.remove('bg-primary-fixed/40', 'border-primary', 'font-semibold');
+      btn.classList.add('opacity-60');
+    });
+
+    button.classList.remove('opacity-60');
+    button.classList.add('bg-primary-fixed/40', 'border-primary');
+
+    if (feedback) {
+      feedback.classList.remove('hidden');
+    }
+  }
+
+  function sendChatMessage() {
+    const input = document.getElementById('chatInput');
+    if (input && input.value.trim() !== '') {
+      input.value = '';
+    }
+  }
+</script></main></body></html>

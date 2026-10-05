@@ -1,0 +1,365 @@
+Analyzing FInal_projectg...                                     
+
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:38:32 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:39:33 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:40:37 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:42:34 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:43:33 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:60:5 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:61:5 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:62:5 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:63:5 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:64:5 • const_with_non_const
+  error • The constructor being called isn't a const constructor. Try removing 'const' from the constructor invocation • lib/main.dart:65:5 • const_with_non_const
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/main.dart:76:35 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/assistant_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:11:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:66:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:67:72 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:77:67 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:84:101 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:136:109 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:161:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:162:67 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:190:185 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:228:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:230:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:231:51 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:237:69 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:254:33 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:257:66 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:265:64 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:285:33 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:285:71 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:287:52 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:288:59 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:297:67 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:298:83 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:301:124 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:303:77 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:307:222 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:309:152 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:311:179 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:313:163 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:320:39 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:322:58 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:331:77 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:333:142 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:344:114 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:349:105 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:350:142 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:359:83 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:360:113 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:362:61 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:371:84 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:372:107 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:374:61 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:402:49 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:409:80 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:412:85 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:429:33 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:429:71 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:431:52 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:432:59 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:442:70 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:444:127 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:449:67 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:450:131 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:455:217 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:466:72 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:472:76 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:474:139 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/assistant_screen.dart:500:47 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:500:75 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:502:57 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:509:68 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:510:93 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:510:142 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/assistant_screen.dart:513:85 • undefined_identifier
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/dashboard_screen.dart:5:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:12:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:88:79 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:128:41 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:184:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:188:33 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:205:39 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:205:69 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:208:68 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:219:43 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:233:44 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:239:37 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:262:74 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:275:43 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:299:37 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:305:63 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:318:37 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:324:60 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:343:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:347:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:364:48 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:367:60 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:378:43 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:399:33 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:417:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:421:33 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:436:32 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:444:32 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:460:31 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:496:48 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:501:33 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:515:35 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:515:66 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:518:65 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:532:45 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:555:41 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:574:65 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:575:80 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:577:47 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/dashboard_screen.dart:588:35 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/dashboard_screen.dart:588:77 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/jobs_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:11:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:66:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:68:59 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:102:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:104:59 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:114:73 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:230:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:230:66 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:235:70 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:247:38 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:247:78 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:247:116 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:249:69 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:254:70 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:255:111 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:255:160 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:261:33 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:261:71 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:264:81 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:276:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:276:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:278:51 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:290:53 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:290:106 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:295:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:296:52 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:306:115 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:308:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:312:94 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:319:35 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:319:64 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:324:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:326:112 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:333:98 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:337:62 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:339:101 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:342:79 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:351:80 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:351:128 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/jobs_screen.dart:352:112 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:361:58 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:362:86 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:364:47 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:375:35 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/jobs_screen.dart:378:68 • undefined_identifier
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/learning_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:11:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:66:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:68:59 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:93:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:95:59 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:132:77 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:134:65 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:150:75 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:152:63 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:227:38 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:227:79 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:227:117 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:230:145 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:230:194 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:238:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:238:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:240:51 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:260:63 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:260:101 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:263:118 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:265:98 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:279:115 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:281:90 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:286:67 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:286:105 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:287:95 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:296:136 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:298:204 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:305:131 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:305:289 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:307:131 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:307:293 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:312:75 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:313:76 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:314:75 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:327:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:327:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:329:51 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:342:136 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:342:176 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:342:342 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:344:101 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:348:146 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:350:201 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:367:52 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:369:114 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:371:130 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:371:294 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:373:130 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:373:285 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:378:75 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:378:115 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:379:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:392:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:392:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:394:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:407:145 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:409:101 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:413:145 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:415:203 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:432:130 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:432:286 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:434:130 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:434:289 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:439:75 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:439:115 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:440:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:453:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:453:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:455:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:465:68 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:474:91 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:478:133 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:480:171 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:484:55 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:484:96 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:491:127 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:494:136 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:496:136 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:504:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:506:122 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:512:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:514:127 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:526:64 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:528:98 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:533:78 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:534:73 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:535:75 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:548:25 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:548:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:550:51 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:560:59 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:560:99 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:563:65 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:565:123 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:569:87 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:573:133 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:575:207 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:579:55 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/learning_screen.dart:579:96 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:586:127 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:587:132 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:593:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:595:116 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:601:72 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:603:116 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:615:68 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:617:108 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:622:74 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:623:73 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/learning_screen.dart:624:75 • undefined_identifier
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/login_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/login_screen.dart:158:71 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/onboarding_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/onboarding_screen.dart:46:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/onboarding_screen.dart:58:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/onboarding_screen.dart:99:87 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/onboarding_screen.dart:101:75 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/pricing_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:18:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:49:101 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:73:99 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:81:236 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:91:234 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:131:98 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:163:179 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:194:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:196:51 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:261:76 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:341:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/pricing_screen.dart:343:51 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/profile_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:18:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:73:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:76:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:121:83 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:138:91 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:187:95 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:204:74 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:217:94 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:238:94 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:269:66 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:310:65 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:346:63 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/profile_screen.dart:348:51 • deprecated_member_use
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/roadmap_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:11:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:66:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:69:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:83:77 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:95:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:119:80 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:131:78 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:149:85 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:166:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:169:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:184:77 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:221:56 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:263:67 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:315:85 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:327:87 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:360:98 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:377:85 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:380:88 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:430:94 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:484:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:487:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:496:79 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/roadmap_screen.dart:530:84 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/roadmap_screen.dart:532:98 • undefined_identifier
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/roadmap_screen.dart:542:22 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/roadmap_screen.dart:550:98 • undefined_identifier
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/signup_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/signup_screen.dart:21:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/signup_screen.dart:33:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/signup_screen.dart:68:77 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/signup_screen.dart:70:65 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/signup_screen.dart:105:67 • deprecated_member_use
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/signup_screen.dart:142:25 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/signup_screen.dart:149:48 • undefined_identifier
+  error • Undefined name 'context'. Try correcting the name to one that is defined, or defining the name • lib/screens/signup_screen.dart:150:50 • undefined_identifier
+   info • Constructors in '@immutable' classes should be declared as 'const'. Try adding 'const' to the constructor declaration • lib/screens/upload_screen.dart:4:3 • prefer_const_constructors_in_immutables
+   info • The private field _selectedTrajectory could be 'final'. Try making the field 'final' • lib/screens/upload_screen.dart:11:10 • prefer_final_fields
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:19:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:74:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:77:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:103:83 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:148:42 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:178:55 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:180:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:189:69 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:252:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:309:75 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:326:73 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:390:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:390:115 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:392:71 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss. Try replacing the use of the deprecated member with the replacement • lib/screens/upload_screen.dart:411:66 • deprecated_member_use
+

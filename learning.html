@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<meta content="mobile_tab" name="shell-type"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-container-highest": "#d8e3fb",
+            "error": "#ba1a1a",
+            "primary-container": "#26a69a",
+            "background": "#f9f9ff",
+            "tertiary-fixed": "#8ef4e9",
+            "on-primary-container": "#003430",
+            "surface-container": "#e7eeff",
+            "on-secondary-fixed": "#260058",
+            "surface-bright": "#f9f9ff",
+            "outline": "#6d7a77",
+            "on-primary-fixed-variant": "#005049",
+            "inverse-primary": "#66d9cc",
+            "tertiary": "#006a63",
+            "on-tertiary-container": "#003430",
+            "on-tertiary-fixed": "#00201d",
+            "surface-tint": "#006a62",
+            "on-error-container": "#93000a",
+            "surface": "#f9f9ff",
+            "primary": "#006a62",
+            "on-secondary-fixed-variant": "#572e99",
+            "surface-container-high": "#dee8ff",
+            "on-error": "#ffffff",
+            "on-primary": "#ffffff",
+            "primary-fixed-dim": "#66d9cc",
+            "secondary-fixed": "#ebdcff",
+            "on-surface": "#111c2d",
+            "on-secondary-container": "#491d8a",
+            "on-background": "#111c2d",
+            "on-tertiary": "#ffffff",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed-dim": "#71d7cd",
+            "on-primary-fixed": "#00201d",
+            "secondary-fixed-dim": "#d4bbff",
+            "on-tertiary-fixed-variant": "#00504a",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#3d4947",
+            "tertiary-container": "#39a59b",
+            "primary-fixed": "#84f5e8",
+            "secondary": "#6f48b2",
+            "inverse-on-surface": "#ecf1ff",
+            "surface-container-low": "#f0f3ff",
+            "surface-variant": "#d8e3fb",
+            "outline-variant": "#bcc9c6",
+            "error-container": "#ffdad6",
+            "surface-dim": "#cfdaf2",
+            "secondary-container": "#b78efe",
+            "inverse-surface": "#263143"
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          spacing: {
+            "gutter": "1rem",
+            "margin": "1.25rem",
+            "space-xl": "2rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.5rem",
+            "space-md": "1rem"
+          },
+          fontFamily: {
+            "headline-sm": ["Plus Jakarta Sans"],
+            "label-lg": ["Plus Jakarta Sans"],
+            "label-md": ["Plus Jakarta Sans"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-md": ["Plus Jakarta Sans"],
+            "body-md": ["Plus Jakarta Sans"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "label-sm": ["Plus Jakarta Sans"],
+            "display-lg": ["Plus Jakarta Sans"]
+          },
+          fontSize: {
+            "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+            "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["26px", { "lineHeight": "34px", "fontWeight": "700" }],
+            "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }],
+            "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    @layer base {
+      html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+      body {
+        overscroll-behavior-y: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .pb-safe {
+        padding-bottom: env(safe-area-inset-bottom, 0px);
+      }
+      .pt-safe {
+        padding-top: env(safe-area-inset-top, 0px);
+      }
+      main > :first-child {
+        margin-top: 0 !important;
+      }
+      main > :last-child {
+        margin-bottom: 0 !important;
+      }
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-fixed">
+<!-- Header: matches h-16 with main pt-16 -->
+<header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_4px_20px_-4px_rgba(100,116,139,0.08)]">
+<div class="h-16 px-margin flex items-center justify-between">
+<!-- Brand Mark & Logo -->
+<div class="flex items-center gap-space-sm">
+<img alt="Lumina Career AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WRbrADognoGRw_tOSOIBO2qkMkPSQrzPGoUedNUh8uwuK7o37bwJA0Hf49fKIq4dmcKUsBHtLvz7pVYntKULdkS9dckE19-AyAGZWsqO5LGy7k5tMD_NoGjsfkwLbBAIDVwRw72FJonndsl3rLUved6FNE8LD83DSLCaVJiTM47JB0AwayigZ0wQKzIUDqmjv0sjtkOi7LNIYITkEdYFGWfRQxo1usSaVr70PMroTrxCKfznbu1qpSHmk"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Lumina</span>
+<span class="font-label-sm text-label-sm text-primary tracking-wide leading-none mt-0.5">Career AI</span>
+</div>
+</div>
+<!-- Dynamic Page Title & User Profile Avatar -->
+<div class="flex items-center gap-space-sm">
+<div class="text-right hidden xs:block">
+<h1 class="font-label-md text-label-md text-on-surface-variant line-clamp-1 max-w-[120px]">Learning Hub</h1>
+</div>
+<a aria-label="User Profile" class="relative flex items-center justify-center p-0.5 rounded-full hover:opacity-90 transition-opacity ring-2 ring-primary-container/30 active:scale-95 duration-150" data-path="profile" href="#">
+<img alt="Profile avatar" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida/AEtjO1WcJnVZOkmT97a6UAXYca2JyRVUEZJos30OceQRcphqHujd2-ShnQ2FbfQjT5w1Zx6JXrQ-n1xB0Cbj_CT-7a36nBbvYaPNq0FwoKMFUbrt1GTyW0RvRPoqngsfR3k0_b-EAm07Jimf-UZ-HClAd566NvSIqoK9JwcjEMOBk9KL3eqObWGEDWsh2mc5QFvcoUuiPcLsq1NvE-ifrO7u5xoTrqBRK3xvzhojh22r8d_y6D6_DpFpiK7bMBA9"/>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container border-2 border-surface-container-lowest"></span>
+</a>
+</div>
+</div>
+</header>
+<!-- Main Content Slot -->
+<main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen">
+<div class="flex flex-col w-full relative overflow-hidden px-margin pb-6">
+<!-- Ambient Living Pastel Blurs (Under Glass Canvas) -->
+<div class="absolute -top-12 -left-16 w-64 h-64 rounded-full bg-primary-fixed/25 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -right-20 w-72 h-72 rounded-full bg-secondary-fixed/30 blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-[820px] left-1/3 w-80 h-80 rounded-full bg-tertiary-fixed/20 blur-3xl pointer-events-none -z-10"></div>
+<!-- Header Micro-Context & AI Tailored Pill -->
+<div class="flex flex-col gap-2 mt-2 mb-4">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-surface-container-lowest/80 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-secondary" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium tracking-tight">AI Tailored for <strong class="text-on-surface font-semibold">Senior AI Product Designer</strong></span>
+</div>
+<!-- Dynamic Progress Overview Card -->
+<div class="rounded-[20px] p-4 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] flex items-center justify-between">
+<div class="flex items-center gap-3">
+<!-- SVG Gauge for Career Match Readiness -->
+<div class="relative w-12 h-12 flex items-center justify-center flex-shrink-0">
+<svg class="w-12 h-12 transform -rotate-90" viewbox="0 0 48 48">
+<circle class="text-surface-container" cx="24" cy="24" fill="none" r="19" stroke="currentColor" stroke-width="4"></circle>
+<circle class="text-primary-container" cx="24" cy="24" fill="none" r="19" stroke="currentColor" stroke-dasharray="119.38" stroke-dashoffset="31.03" stroke-linecap="round" stroke-width="4"></circle>
+</svg>
+<span class="absolute font-label-md text-label-md text-on-surface font-semibold">74%</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold leading-tight">Target Role Alignment</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Complete 2 more modules to reach 90%</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">insights</span>
+</div>
+</div>
+<!-- Search & Filter Controls -->
+<div class="flex flex-col gap-3 mb-6">
+<div class="flex items-center gap-2">
+<!-- Search Bar -->
+<div class="flex-1 flex items-center gap-2 px-3.5 py-2.5 rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">search</span>
+<input class="bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:outline-none w-full" placeholder="Search AI patterns, metrics, rubrics..." type="text"/>
+<button aria-label="Voice input" class="text-on-surface-variant hover:text-on-surface p-0.5 rounded-full flex items-center justify-center" type="button">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+</div>
+<!-- Quick Action Filter Trigger -->
+<button aria-label="Filter parameters" class="h-11 w-11 flex items-center justify-center rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-md text-on-surface-variant hover:text-primary active:scale-95 transition-transform shadow-sm" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Filter Chips Carousel -->
+<div class="flex items-center gap-2 overflow-x-auto pb-1 -mx-margin px-margin no-scrollbar" id="filterTabs">
+<button class="filter-chip active-filter px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all whitespace-nowrap" data-filter="all">
+        All Recommended
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant hover:text-on-surface font-medium transition-all whitespace-nowrap shadow-sm" data-filter="coursera">
+        Coursera
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant hover:text-on-surface font-medium transition-all whitespace-nowrap shadow-sm" data-filter="udemy">
+        Udemy
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant hover:text-on-surface font-medium transition-all whitespace-nowrap shadow-sm" data-filter="projects">
+        Hands-on Projects
+      </button>
+<button class="filter-chip px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-lowest/80 backdrop-blur-md text-on-surface-variant hover:text-on-surface font-medium transition-all whitespace-nowrap shadow-sm" data-filter="labs">
+        Verified Labs
+      </button>
+</div>
+</div>
+<!-- Section 1: Curated Courses -->
+<section class="flex flex-col gap-3.5 mb-7">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Curated Courses</h2>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+          3 Critical Gaps
+        </span>
+</div>
+<button class="font-label-md text-label-md text-primary font-semibold hover:underline flex items-center">
+        See all
+        <span class="material-symbols-outlined text-[16px] ml-0.5">chevron_right</span>
+</button>
+</div>
+<!-- Course Card 1: Advanced LLM UX -->
+<div class="group relative rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-xl p-4 shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] transition-all duration-200 hover:shadow-md flex flex-col gap-3.5">
+<!-- Media Header & Badges -->
+<div class="relative w-full h-32 rounded-[16px] overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Futuristic luminous user interface abstract with soft teal and glowing purple nodes, displaying neural network wireframes and contextual AI design systems in a clean modern aesthetic, photographic depth of field, pastel tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXC7-m3-riuke6QlpSFH7Lb-CWgU4RQEIqyRWd705BcnNMB85fW_6Je1aHChyTXp0JXKjr7kj6ku2Q9OTDai-UKGfKEgNuoGzaf0aGs7yan8CbG-nsbJYMYXui5yHRscs7bbH3lQjJ83Y819wIK4ZqXgIyHw4rfBxg_vJKDY-gmdOuKqTayZdSMyb5Cyoc0UU9Rg7AyfENXdATijCX2SLRF6Rl5JhFRM49po3XpIq4f9xTN93JaJt8bQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-inverse-surface/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-sm">
+<span class="font-label-sm text-label-sm font-bold text-primary tracking-wide uppercase">Coursera</span>
+<span class="text-on-surface-variant/40">•</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">DeepLearning.AI</span>
+</div>
+<div class="absolute bottom-2.5 left-2.5 right-2.5 flex items-center justify-between text-on-error">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md font-semibold text-inverse-on-surface">4.8 <span class="text-inverse-on-surface/80 font-normal">(12.4k)</span></span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-lowest/20 backdrop-blur-md px-2 py-0.5 rounded-full text-inverse-on-surface">4 Weeks</span>
+</div>
+</div>
+<!-- Card Content -->
+<div class="flex flex-col gap-1.5">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug line-clamp-1">
+          Advanced LLM Interface &amp; UX Architecture
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Master non-deterministic interface states, token streaming affordances, and cognitive friction dampening for multi-turn reasoning agents.
+        </p>
+</div>
+<!-- Skills + CTA Row -->
+<div class="flex items-center justify-between pt-1 gap-2">
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+            Prompt Eval
+          </span>
+<span class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm font-medium">
+            Context Windows
+          </span>
+</div>
+<button class="px-4 py-2 rounded-[14px] bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold shadow-[0_4px_14px_rgba(38,166,154,0.3)] hover:opacity-95 active:scale-95 transition-transform flex items-center gap-1 flex-shrink-0">
+          Enroll Now
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Course Card 2: Quantitative UX Metrics -->
+<div class="group relative rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-xl p-4 shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] transition-all duration-200 hover:shadow-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col gap-1 flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Udemy Business
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">18 Hours • On-demand</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-1">
+            Quantitative UX Metrics &amp; Live Telemetry
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Instrument telemetry funnels, write designer SQL queries, and measure AI hallucination drop-off impact directly in Mixpanel.
+          </p>
+</div>
+<div class="w-16 h-16 rounded-[16px] overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Abstract dynamic 3D telemetry bar chart with glowing lavender and aqua glass bars, visualizing real-time analytics data in an elegant, minimal digital workspace." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIghxgL3MQ__qELO8qWGV6iH_9lpbysprGtuZBfSMaawr_my7En081q8HcdxKdGD8hPTiSm0qN3wtR8yGA2-L_V9uycfDHiNI-sIiEehMqIlcizGSxoB5KU6_z-UDwSehJMbVu58jm2GB-SnvCAKgPAUk7XOjJDupiPp_ILVMpiwz6SS4PbsKLkpFWd3TOqlz91dnx3eLRXRTep0umaS1sHqFGqrPjV6qwy2qvx_JYfGaF5zYm0tuxSA"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 gap-2">
+<div class="flex flex-wrap gap-1.5 items-center">
+<span class="flex items-center gap-0.5 font-label-sm text-label-sm text-primary font-semibold mr-1">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+            4.9 (8.1k)
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            SQL for Designers
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Mixpanel
+          </span>
+</div>
+<button class="px-3.5 py-1.5 rounded-[12px] bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold active:scale-95 transition-transform flex-shrink-0">
+          Enroll
+        </button>
+</div>
+</div>
+<!-- Course Card 3: Enterprise AI Guardrails -->
+<div class="group relative rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-xl p-4 shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] transition-all duration-200 hover:shadow-md flex flex-col gap-3">
+<div class="flex items-start justify-between gap-3">
+<div class="flex flex-col gap-1 flex-1 min-w-0">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold uppercase tracking-wider">
+              Stanford Online
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Self-Paced • 3 Weeks</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight mt-1">
+            Enterprise AI Guardrails &amp; HITL Systems
+          </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+            Human-in-the-loop fallback schemas, token confidence visualization, and scalable Figma variable systems for regulated domains.
+          </p>
+</div>
+<div class="w-16 h-16 rounded-[16px] overflow-hidden flex-shrink-0 shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Translucent interlocking glass shields floating in a calm, ethereal architectural space, soft ambient teal lighting, symbolizing safety guardrails and robust human alignment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKgcWPcD8TyZ5dlE7DnqBsJc4saaLudAAoK-5tqCHOFVlE1qfPbsloofYYFq4H-XJOFSF3yU3Mxz10nA4FvnkqyC9oZqG_C1QFjHFO6hZEEO7wc_w2uB-dT2RCdpjmY9Ns1nuBiM7EXQUkL2sR5EqSi54kwqB69ozj-DSy79CRUInCZ7bq2zLSOGbJw6YvKhH-DvvwXYkRjo8l9dW-mmoMoxcsX1TFHjefMdzoQNXioQjUL23E2FcFag"/>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 gap-2">
+<div class="flex flex-wrap gap-1.5 items-center">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Safety AI
+          </span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Figma Tokens
+          </span>
+</div>
+<button class="px-3.5 py-1.5 rounded-[12px] bg-secondary-fixed/50 hover:bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold active:scale-95 transition-transform flex-shrink-0">
+          Enroll
+        </button>
+</div>
+</div>
+</section>
+<!-- Section 2: Real-World Project Blueprints -->
+<section class="flex flex-col gap-3.5 mb-2">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Real-World Project Blueprints</h2>
+<span class="material-symbols-outlined text-primary text-[20px]">construction</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Build high-signal portfolio proof vetted against target hiring rubrics.
+      </p>
+</div>
+<!-- Project Blueprint 1: Voice & Vision Copilot -->
+<div class="relative rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-xl p-4 shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] flex flex-col gap-3">
+<!-- Top signal badge & rubrics -->
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-fixed/40 text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">High Recruiter Signal</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Intermediate • 2 Wks</span>
+</div>
+<!-- Title & Match description -->
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+          Multi-Modal Voice &amp; Vision AI Copilot
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Architect end-to-end user journeys for zero-latency camera streams with voice interruption capabilities.
+        </p>
+</div>
+<!-- Hiring Rubric Match Card -->
+<div class="rounded-[14px] bg-surface-container-low/70 p-3 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Target Rubric Matches</span>
+<div class="flex items-center gap-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-xs">Stripe</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-xs">Figma</span>
+</div>
+</div>
+<!-- Checklist Preview -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Handles 300ms audio latency states gracefully</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Includes interactive Prototype &amp; Design System Kit</span>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-secondary">people</span>
+<span>412 designers completed</span>
+</div>
+<button class="px-4 py-2 rounded-[14px] bg-primary-container text-on-primary font-label-lg text-label-lg font-semibold shadow-[0_4px_14px_rgba(38,166,154,0.3)] hover:opacity-95 active:scale-95 transition-transform flex items-center gap-1.5">
+<span>Start Project</span>
+<span class="material-symbols-outlined text-[16px]">play_arrow</span>
+</button>
+</div>
+</div>
+<!-- Project Blueprint 2: Autonomous Agent Planning Canvas -->
+<div class="relative rounded-[20px] bg-surface-container-lowest/85 backdrop-blur-xl p-4 shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)] flex flex-col gap-3">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-secondary-fixed/40 text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[15px]" style="font-variation-settings: 'FILL' 1;">stars</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Senior Staff Tier</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">Advanced • 3 Wks</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">
+          Autonomous Agent Task-Planning Canvas
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Create an infinite interactive workspace interface showing step-by-step sub-agent delegation, rollback trees, and user-override checkpoints.
+        </p>
+</div>
+<!-- Hiring Rubric Match Card -->
+<div class="rounded-[14px] bg-surface-container-low/70 p-3 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider">Target Rubric Matches</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold shadow-xs">Anthropic</span>
+</div>
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Tree-of-thought visual branching models</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface">Direct sandbox execution permissions UI</span>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-primary">psychology</span>
+<span>Aligned with Claude 3.5 Sonnet UX</span>
+</div>
+<button class="px-4 py-2 rounded-[14px] bg-surface-container-high hover:bg-surface-container text-on-surface font-label-lg text-label-lg font-semibold active:scale-95 transition-transform flex items-center gap-1">
+<span>View Spec</span>
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Filter Tabs Script -->
+<script>
+    (function initFilterChips() {
+      const container = document.getElementById('filterTabs');
+      if (!container) return;
+      const chips = container.querySelectorAll('.filter-chip');
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => {
+            c.classList.remove('bg-primary-container', 'text-on-primary', 'font-semibold');
+            c.classList.add('bg-surface-container-lowest/80', 'text-on-surface-variant', 'font-medium');
+          });
+          chip.classList.remove('bg-surface-container-lowest/80', 'text-on-surface-variant', 'font-medium');
+          chip.classList.add('bg-primary-container', 'text-on-primary', 'font-semibold');
+        });
+      });
+    })();
+  </script>
+</div>
+</main>
+<!-- Bottom Floating Glass Navigation Bar (5 Core Tabs) -->
+<div class="fixed bottom-0 w-full z-50 pb-safe px-3 pointer-events-none mb-3">
+<nav class="pointer-events-auto mx-auto max-w-md bg-surface-container-lowest/85 backdrop-blur-xl border border-surface-container-lowest/90 shadow-[0_12px_32px_-8px_rgba(100,116,139,0.16)] rounded-[24px] px-1.5 py-1.5 flex items-center justify-between" data-active-classes="bg-primary-container/15 text-primary font-label-md shadow-sm">
+<!-- Tab 1: Dashboard -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="dashboard" href="#">
+<span class="material-symbols-outlined text-[22px]">dashboard</span>
+<span class="font-label-sm text-label-sm mt-0.5">Dashboard</span>
+</a>
+<!-- Tab 2: Learning -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="learning" href="#">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+<span class="font-label-sm text-label-sm mt-0.5">Learning</span>
+</a>
+<!-- Tab 3: Jobs -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="jobs" href="#">
+<span class="material-symbols-outlined text-[22px]">work_outline</span>
+<span class="font-label-sm text-label-sm mt-0.5">Jobs</span>
+</a>
+<!-- Tab 4: Roadmap -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="roadmap" href="#">
+<span class="material-symbols-outlined text-[22px]">alt_route</span>
+<span class="font-label-sm text-label-sm mt-0.5">Roadmap</span>
+</a>
+<!-- Tab 5: Profile / Portfolio -->
+<a class="flex-1 flex flex-col items-center justify-center min-w-[54px] min-h-[46px] py-1 px-1 rounded-[18px] text-on-surface-variant hover:text-on-surface transition-all duration-200 active:scale-95" data-path="profile" href="#">
+<span class="material-symbols-outlined text-[22px]">person</span>
+<span class="font-label-sm text-label-sm mt-0.5">Profile</span>
+</a>
+</nav>
+</div>
+</body></html>

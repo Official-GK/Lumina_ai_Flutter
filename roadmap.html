@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-highest": "#d8e3fb", "error": "#ba1a1a", "primary-container": "#26a69a", "background": "#f9f9ff", "tertiary-fixed": "#8ef4e9", "on-primary-container": "#003430", "surface-container": "#e7eeff", "on-secondary-fixed": "#260058", "surface-bright": "#f9f9ff", "outline": "#6d7a77", "on-primary-fixed-variant": "#005049", "inverse-primary": "#66d9cc", "tertiary": "#006a63", "on-tertiary-container": "#003430", "on-tertiary-fixed": "#00201d", "surface-tint": "#006a62", "on-error-container": "#93000a", "surface": "#f9f9ff", "primary": "#006a62", "on-secondary-fixed-variant": "#572e99", "surface-container-high": "#dee8ff", "on-error": "#ffffff", "on-primary": "#ffffff", "primary-fixed-dim": "#66d9cc", "secondary-fixed": "#ebdcff", "on-surface": "#111c2d", "on-secondary-container": "#491d8a", "on-background": "#111c2d", "on-tertiary": "#ffffff", "on-secondary": "#ffffff", "tertiary-fixed-dim": "#71d7cd", "on-primary-fixed": "#00201d", "secondary-fixed-dim": "#d4bbff", "on-tertiary-fixed-variant": "#00504a", "surface-container-lowest": "#ffffff", "on-surface-variant": "#3d4947", "tertiary-container": "#39a59b", "primary-fixed": "#84f5e8", "secondary": "#6f48b2", "inverse-on-surface": "#ecf1ff", "surface-container-low": "#f0f3ff", "surface-variant": "#d8e3fb", "outline-variant": "#bcc9c6", "error-container": "#ffdad6", "surface-dim": "#cfdaf2", "secondary-container": "#b78efe", "inverse-surface": "#263143" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin": "1.25rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "18px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }], "headline-md": ["22px", { "lineHeight": "28px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "headline-lg": ["26px", { "lineHeight": "34px", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "fontWeight": "600" }], "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100vh;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>body { min-height: max(884px, 100dvh); }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background text-on-surface font-body-md text-body-md flex flex-col min-h-screen antialiased selection:bg-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/75 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="Lumina AI Career Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WRbrADognoGRw_tOSOIBO2qkMkPSQrzPGoUedNUh8uwuK7o37bwJA0Hf49fKIq4dmcKUsBHtLvz7pVYntKULdkS9dckE19-AyAGZWsqO5LGy7k5tMD_NoGjsfkwLbBAIDVwRw72FJonndsl3rLUved6FNE8LD83DSLCaVJiTM47JB0AwayigZ0wQKzIUDqmjv0sjtkOi7LNIYITkEdYFGWfRQxo1usSaVr70PMroTrxCKfznbu1qpSHmk"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">Lumina</span><span class="font-label-sm text-label-sm text-primary tracking-wide leading-none mt-0.5">Career AI</span></div></div><div class="flex items-center gap-space-sm"><div class="text-right"><h1 class="font-label-md text-label-md text-on-surface-variant line-clamp-1 max-w-[130px]">Roadmap</h1></div><a class="relative flex items-center justify-center p-0.5 rounded-full hover:opacity-90 transition-opacity" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/20" src="https://lh3.googleusercontent.com/aida/AEtjO1WcJnVZOkmT97a6UAXYca2JyRVUEZJos30OceQRcphqHujd2-ShnQ2FbfQjT5w1Zx6JXrQ-n1xB0Cbj_CT-7a36nBbvYaPNq0FwoKMFUbrt1GTyW0RvRPoqngsfR3k0_b-EAm07Jimf-UZ-HClAd566NvSIqoK9JwcjEMOBk9KL3eqObWGEDWsh2mc5QFvcoUuiPcLsq1NvE-ifrO7u5xoTrqBRK3xvzhojh22r8d_y6D6_DpFpiK7bMBA9"/></a></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-background min-h-screen"><div class="flex flex-col w-full px-margin pb-6 relative overflow-hidden">
+<!-- Ambient Atmospheric Nodes (Background Glows) -->
+<div class="absolute -top-12 -left-16 w-56 h-56 bg-primary-container/15 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-80 -right-20 w-64 h-64 bg-secondary-container/20 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-40 left-6 w-48 h-48 bg-tertiary-fixed/25 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Trajectory Overview Card -->
+<section class="relative w-full rounded-[20px] p-5 mb-space-md bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)]">
+<div class="flex items-start justify-between gap-space-sm mb-2.5">
+<div class="flex items-center gap-space-xs">
+<span class="p-1 rounded-lg bg-primary-container/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">explore</span>
+</span>
+<span class="font-label-md text-label-md text-primary tracking-wide uppercase">Target Trajectory</span>
+</div>
+<div class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-md text-label-md shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+        68% Aligned
+      </div>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface tracking-tight mb-1">
+      Product Designer (AI / Systems)
+    </h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Based on 35,000+ industry rubrics, master 4 key missing competencies to unlock high-intent tier-1 hiring pools.
+    </p>
+<!-- Micro Trajectory Readiness Indicator -->
+<div class="mt-4 pt-3.5 bg-surface-container-low/70 rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">insights</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant leading-none mb-0.5">ESTIMATED EFFORT</p>
+<p class="font-label-md text-label-md text-on-surface leading-tight">4-6 Weeks to Senior AI Tier</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-fixed/50 px-2 py-1 rounded-full font-semibold">Tier-1 Fit</span>
+</div>
+</section>
+<!-- Skills Breakdown Card (Acquired vs Priority Gaps) -->
+<section class="relative w-full rounded-[20px] p-5 mb-space-lg bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_10px_30px_-10px_rgba(100,116,139,0.08)]">
+<!-- Verified Competencies -->
+<div class="mb-4">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-primary-container/25 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Skills You Have (Verified)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">5 Validated</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+          UI/UX Architecture
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+          Design Systems &amp; Tokens
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+          Interactive Prototyping
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+          Qualitative User Testing
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+          Figma Component Engineering
+        </span>
+</div>
+</div>
+<!-- Soft Glass Divider -->
+<div class="w-full h-px bg-surface-variant/70 my-4"></div>
+<!-- Missing Priority Gaps -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="w-5 h-5 rounded-full bg-error-container/60 text-error flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px]">priority_high</span>
+</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface text-[15px]">Missing Skills (Priority Gaps)</h3>
+</div>
+<span class="font-label-sm text-label-sm text-error font-semibold">4 Critical</span>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error-container/35 text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-error text-[14px]">bolt</span>
+          Prompt Engineering &amp; Evaluators
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error-container/35 text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-error text-[14px]">query_stats</span>
+          Quantitative Data Strategy (SQL/Metrics)
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-fixed/40 text-on-secondary-container font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-secondary text-[14px]">auto_awesome</span>
+          LLM Interface Patterns
+        </span>
+<span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-error-container/35 text-on-surface font-label-md text-label-md shadow-xs">
+<span class="material-symbols-outlined text-error text-[14px]">layers</span>
+          Frontend State Architecture
+        </span>
+</div>
+</div>
+</section>
+<!-- Vertical Trajectory Timeline Section -->
+<section class="relative w-full">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Personalized Trajectory Timeline</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time synchronized career plan</p>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold">
+        3 Steps Left
+      </span>
+</div>
+<!-- Timeline Wrapper with Continuous Connecting Stem -->
+<div class="relative pl-7">
+<!-- Gradient Timeline Bar -->
+<div class="absolute left-[15px] top-4 bottom-10 w-[3px] rounded-full bg-gradient-to-b from-primary-container via-secondary-container to-surface-variant"></div>
+<!-- Step 1: Completed -->
+<div class="relative mb-6">
+<!-- Milestone Node -->
+<div class="absolute -left-[27px] top-1.5 w-6 h-6 rounded-full bg-primary flex items-center justify-center shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-on-primary text-[14px]">check</span>
+</div>
+<div class="rounded-[20px] p-4 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_-6px_rgba(100,116,139,0.06)]">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm font-semibold">
+              Completed
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 14</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug">
+            Foundation: AI Workflow Fundamentals
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 mb-2.5">
+            Verified mastery in diffusion tools &amp; autonomous agent workflows.
+          </p>
+<div class="flex items-center justify-between pt-2 bg-surface-container-low/60 rounded-xl px-3 py-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface font-medium">Lumina Score: 94%</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-semibold flex items-center gap-0.5 hover:underline" href="#">
+              View Credential
+              <span class="material-symbols-outlined text-[13px]">open_in_new</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Step 2: Active / In Progress -->
+<div class="relative mb-6">
+<!-- Glowing Active Milestone Node -->
+<div class="absolute -left-[29px] top-1.5 w-7 h-7 rounded-full bg-surface-container-lowest flex items-center justify-center shadow-[0_0_0_4px_rgba(38,166,154,0.2)]">
+<div class="w-3.5 h-3.5 rounded-full bg-primary animate-pulse"></div>
+</div>
+<div class="rounded-[20px] p-4.5 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_12px_32px_-8px_rgba(0,106,98,0.12)] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Sprint 2 • Active Now
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Est. 10 days left</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[17px] leading-snug">
+            LLM Patterns &amp; Prompt Design
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 mb-3">
+            Building streaming state patterns, token budget managers, and semantic error recovery.
+          </p>
+<!-- Progress Segment -->
+<div class="space-y-1.5 mb-3.5">
+<div class="flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-on-surface font-medium">Sprint Completion</span>
+<span class="text-primary font-bold">60% (3 of 5 Labs)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary-container to-secondary rounded-full" style="width: 60%"></div>
+</div>
+</div>
+<!-- Active Task Cue -->
+<div class="p-3 rounded-xl bg-surface-container-low/80 mb-3.5 flex items-start gap-2.5">
+<span class="material-symbols-outlined text-secondary text-[20px] mt-0.5">terminal</span>
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">CURRENT LAB</p>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Lab 4: Building Adaptive Chatbot UI Components</p>
+</div>
+</div>
+<!-- Action Button -->
+<button class="w-full py-2.5 px-4 rounded-xl bg-gradient-to-r from-primary-container to-secondary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-[0_4px_14px_rgba(38,166,154,0.3)] active:scale-[0.98] transition-transform" type="button">
+<span>Resume Active Lab</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Step 3: Upcoming High Priority -->
+<div class="relative mb-6">
+<!-- Milestone Node -->
+<div class="absolute -left-[27px] top-1.5 w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant shadow-sm">
+<span class="font-label-sm text-label-sm font-bold">3</span>
+</div>
+<div class="rounded-[20px] p-4 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_4px_20px_-6px_rgba(100,116,139,0.06)]">
+<div class="flex items-center justify-between mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed/50 text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Unlocks +12 Job Matches
+            </span>
+<span class="font-label-sm text-label-sm text-error font-medium flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+              High Priority
+            </span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug">
+            Sprint 3: Data Analytics &amp; Product Metrics
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 mb-2.5">
+            Addresses your #1 critical skill gap: telemetry interpretation &amp; live conversion SQL.
+          </p>
+<div class="bg-surface-container-low/60 rounded-xl p-3 flex items-center gap-2.5">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">query_stats</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[12px] leading-tight">
+              Cohort case studies with actual Figma &amp; Mixpanel analytics telemetry.
+            </p>
+</div>
+</div>
+</div>
+<!-- Step 4: Final Career Goal -->
+<div class="relative">
+<!-- Trophy Milestone Node -->
+<div class="absolute -left-[27px] top-1.5 w-6 h-6 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center shadow-md shadow-secondary/15">
+<span class="material-symbols-outlined text-[15px]">military_tech</span>
+</div>
+<div class="rounded-[20px] p-4.5 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_6px_24px_-6px_rgba(111,72,178,0.12)]">
+<div class="flex items-center justify-between mb-1.5">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">
+              Final Milestone
+            </span>
+<span class="font-label-sm text-label-sm text-secondary font-bold">Lumina Certified</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface text-[16px] leading-snug">
+            Portfolio Defense &amp; Recruiter Fast-Track
+          </h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 mb-3">
+            AI Product Designer rubric certification defense with Lumina hiring partners.
+          </p>
+<div class="flex items-center justify-between bg-primary-container/10 rounded-xl px-3 py-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[17px]">payments</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Projected Range</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">$145k – $175k</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Coaching / Support Banner -->
+<section class="mt-space-lg w-full rounded-[20px] p-4 bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_8px_25px_-8px_rgba(100,116,139,0.08)] flex flex-col sm:flex-row items-center justify-between gap-3">
+<div class="flex items-center gap-3 w-full sm:w-auto">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed/60 flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">smart_toy</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Need live mentor feedback?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Pair with an AI Systems design lead</p>
+</div>
+</div>
+<button class="w-full sm:w-auto px-4 py-2 rounded-xl bg-secondary text-on-secondary font-label-md text-label-md font-semibold flex items-center justify-center gap-1.5 shadow-sm active:scale-[0.98] transition-transform" type="button">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>1:1 Coach Session</span>
+</button>
+</section>
+</div></main><div class="fixed bottom-0 w-full z-50 pb-safe px-margin pointer-events-none mb-3"><nav class="pointer-events-auto mx-auto max-w-md bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_10px_30px_-10px_rgba(100,116,139,0.12)] rounded-[20px] px-space-xs py-1.5 flex items-center justify-around" data-active-classes="bg-primary-container/20 text-primary font-label-md"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 px-space-xs rounded-[20px] text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[22px]">dashboard</span><span class="font-label-sm text-label-sm mt-0.5">Dashboard</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 px-space-xs rounded-[20px] text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="upload" href="#"><span class="material-symbols-outlined text-[22px]">upload_file</span><span class="font-label-sm text-label-sm mt-0.5">Upload</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 px-space-xs rounded-[20px] transition-all duration-200 bg-primary-container/20 text-primary font-label-md" data-path="roadmap" href="#"><span class="material-symbols-outlined text-[22px]">alt_route</span><span class="font-label-sm text-label-sm mt-0.5">Roadmap</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] py-1 px-space-xs rounded-[20px] text-on-surface-variant hover:text-on-surface transition-all duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></nav></div></body></html>
